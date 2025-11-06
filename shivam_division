@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int dividend, divisor;
+    float quotient;
+    int remainder;
+
+    printf("Enter dividend: ");
+    scanf("%d", &dividend);
+
+
+    printf("Enter divisor: ");
+    scanf("%d", &divisor);
+
+    if (divisor == 0) {
+        printf("Error: Division by zero is not allowed.\n");
+    } else {
+       
+        quotient = (float)dividend / divisor;
+
+       
+        remainder = dividend % divisor;
+
+
+        printf("Quotient = %.2f\n", quotient); // Display quotient with 2 decimal places
+        printf("Remainder = %d\n", remainder);
+    }
+
+    return 0;
+}
